@@ -565,3 +565,17 @@ original_file = files_list[0]
 df = pd.read_csv(original_file)
 
 pdb.set_trace()
+
+
+#pandas set index new way - reading selected colums
+
+data = pd.read_excel('piku.xlsx' , names=['time', 'ltp'], index_col=0)
+
+
+
+
+
+
+
+
+
