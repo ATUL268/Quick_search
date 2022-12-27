@@ -570,9 +570,8 @@ pdb.set_trace()
 #pandas set index new way - reading selected colums
 
 data = pd.read_excel('piku.xlsx' , names=['time', 'ltp'], index_col=0)
-
-
-
+#Tick data to Min data 
+resample_LTP = data.resample('1Min').ohlc()
 
 
 
